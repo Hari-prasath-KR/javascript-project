@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <style>
+        body {
+            background-color:lightgray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:gray;
+            color: black;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        nav {
+            overflow: hidden;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: right;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            color: white;
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .carcont {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .cars {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+         img:hover {
+             transform: scale(1.2);
+             opacity: 0.9;
+        }
+        #availcar{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Rental Service</h1>
+        <h3>Get a Chance to Ride Your Favorite Car</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="carcont">
+        <h2 style="text-align: center;">Available Cars</h2>
+        <div id="availcar">
+            <div class="cars">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5M1XV1p569TUa9V1nTC1uBPVM_rx6lsg6g&s" alt="Adventure Bike">
+                <h3>Toyota Corolla</h3>
+                <p>Price:4000Rs/Day</p>
+            </div>
+            <div class="cars">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuCro9O_6MVLGDbrygSkfRvoE4jWEIn1EHqA&s" alt="Road Bike">
+                <h3>Nissan Altima</h3>
+                <p>Price: 5000Rs/Day</p>
+            </div>
+            <div class="cars">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQha7Ldq6Vbh-8hfs2gyhEsawXI7mhciK2Whg&s" alt="Super Bike">
+                <h3>Mahindra Imvader</h3>
+                <p>Price: 4000Rs/Day</p>
+            </div>
+            <div class="cars">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUAnFYjgKLs2bgyJpgexmIjKOXT3pPSF8pw&s" alt="Sports Bike">
+                <h3>Honda CR-V</h3>
+                <p>Price: 4000Rs/Day</p>
+            </div>
+            <div class="cars">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFbwgYbT3rU4nzg61CT7cpRJ3o5N6nNiWfQ&s" alt="Scooters">
+                <h3>Jeep Cherokee</h3>
+                <p>Price: 3000Rs/Day</p>
+            </div>
+            <div class="cars">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/2015_Kia_Optima_3_ISG_CRDi_1.7_Front.jpg/250px-2015_Kia_Optima_3_ISG_CRDi_1.7_Front.jpg" alt="Scooters">
+                <h3>Kia Optima</h3>
+                <p>Price: 3000Rs/Day</p>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        <p>&copy; 2024 Car Rental Service. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
