@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+     nav{
+        background-color:gray;
+       position: sticky;
+       top: 0;
+       padding: 20px;
+       flex-wrap: wrap;
+    } 
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: right;
+        font-size: 20px;
+   }
+
+   nav li {
+        margin: 0 20px;
+    }
+
+   nav a {
+        color:black;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        transition: background-color 0.3s ease;
+   } 
+
+   nav a:hover {
+        background-color:black;
+        color: white;
+        border-radius: 10px;
+   }
+  </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="car.html">Car Rentals</a></li>
+            <li><a href="bike.html">Bike Rentals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2>     Contact Us</h2>
+        <form class="contact-form">
+            <table><tr><td>
+            <label for="name">Name:</label></td><td>
+            <input type="text" id="name" name="name" required>
+            </td></tr>
+            <tr><td>
+            <label for="email">Email:</label></td><td>
+            <input type="email" id="email" name="email" required></td></tr>
+            <tr><td>
+                <label for="number">Phone:</label></td><td>
+                <input type="tel" id="number" name="number" required></td></tr>
+             <tr><td>
+            <label for="message">Suggestion:</label></td><td>
+            <input typr ="textarea" rows="2" id="message" name="message" rows="4" required></textarea></td></tr>
+            <tr><td><button type="submit">Submit</button></td><td><button type="reset">Reset</button></td></tr>
+            </table>
+        </form>
+    </section>
+</body>
+</html>
